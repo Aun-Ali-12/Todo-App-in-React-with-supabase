@@ -1,0 +1,135 @@
+/* Reset and basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 15px;
+  min-height: 100vh;
+}
+
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input {
+  flex: 1;
+  width: 35rem;
+  padding: 0.5px;
+  height: 2rem;
+  outline: none;
+  border: 2px solid #d8d6d6;
+  font-size: 16px;
+  padding: 0.9rem;
+}
+
+form input:focus {
+  border-color: #388e3c;
+}
+
+form button {
+  margin-left: 8px;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #4caf50;
+}
+.button{
+  display: flex;
+  align-items: center;
+}
+
+form button:hover {
+  background-color: #388e3c;
+}
+
+/* List */
+ul {
+  list-style: none;
+}
+
+ul li {
+  background: #fafafa;
+  border-left: 4px solid #4caf50;
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+ul li:hover {
+  transform: translateY(-2px);
+}
+
+/* Buttons inside list */
+ul li button {
+  margin-left: 8px;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+ul li button:first-of-type {
+  background-color: #4caf50;
+}
+
+ul li button:first-of-type:hover {
+  background-color: #388e3c;
+}
+
+ul li button:last-of-type {
+  background-color: #f44336;
+}
+
+ul li button:last-of-type:hover {
+  background-color: #d32f2f;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  form {
+    flex-direction: column;
+  }
+
+  form button {
+    width: 100%;
+  }
+
+  ul li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  ul li button {
+    width: 100%;
+  }
+}
